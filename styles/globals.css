@@ -6,3 +6,12 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.container {
+  max-width: 800px;
+  padding: 200px 50px;
+  margin: auto auto;
+}
+
+.page {
+  padding: 20px;
+}
