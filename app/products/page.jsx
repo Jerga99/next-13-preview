@@ -9,7 +9,7 @@ import { use } from "react";
 
 // equvalent to getStaticProps
 async function getProducts() {
-  const res = await fetch("https://product-app-101-server.vercel.app/api/products");
+  const res = await fetch("https://product-app-101-server.vercel.app/api/products", { cache: 'no-store' });
   return res.json();
 }
 
