@@ -5,6 +5,7 @@
 //children components, even if you're requesting the same data in 
 // multiple components.
 
+import Link from "next/link";
 import { use } from "react";
 
 // equvalent to getStaticProps
@@ -21,8 +22,11 @@ export default function ProductsPage() {
       <h1>Hi there: Products Page</h1>
       <div>
         { products.map(product =>
-          <div key={product.name}>
-            {product.name}
+          <div key={product.name} >
+            <Link 
+              href={`/products/${product.name.replace(/\s+/g, '-').toLowerCase()}`}>
+              {product.name}
+            </Link>
           </div>
         )}
       </div>
