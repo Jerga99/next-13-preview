@@ -6,6 +6,8 @@ export default function Navigation() {
     { name: "Home", path: "/" },
     { name: "Blogs", path: "/blogs" },
     { name: "Products", path: "/products" },
+    { name: "Shop", path: "/shop" },
+    { name: "Dashboard", path: "/dashboard" },
   ]
   return (
     <div>
